@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class Navbar extends Component {
 	render() {
 		return (
-			<nav className="navbar navbar-default navbar-static-top role=navigation">
+			<nav className="navbar navbar-light navbar-static-top role=navigation">
 				<div className="container">
 					<Link className="navbar-brand" to="/register">
 						!SocialCodes
@@ -18,29 +18,29 @@ class Navbar extends Component {
 						<span className="navbar-toggler-icon" />
 					</button>
 
-					<div className="collapse navbar-collapse" id="mobile-nav">
-						<ul className="navbar-nav mr-auto">
-							<li className="nav-item">
-								<Link className="nav-link" to="/dev_profiles">
-									{' '}
-									Developers
-								</Link>
-							</li>
-						</ul>
+          <div className="collapse navbar-collapse" id="mobile-nav">
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item">
+                <Link className="nav-link" to="/dev_profiles">
+                  {' '}
+                  Developers
+                </Link>
+              </li>
+            </ul>
 
-						<ul className="navbar-nav mr-auto">
-							<li className="nav-item">
-								<Link className="nav-link" to="/org_profiles">
-									{' '}
-									Organisations
-								</Link>
-							</li>
-						</ul>
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item">
+                <Link className="nav-link" to="/org_profiles">
+                  {' '}
+                  Organisations
+                </Link>
+              </li>
+            </ul>
 
 						<ul className="navbar-nav ml-auto">
 							<li className="nav-item">
 								<Link className="nav-link" to="/register">
-									Sign Up
+									Register
 								</Link>
 							</li>
 							<li className="nav-item">
@@ -50,19 +50,19 @@ class Navbar extends Component {
 							</li>
 						</ul>
 
-						<ul className="navbar-nav mr-auto">
-							<li className="nav-item">
-								<a className="nav-link" href="seek_profiles.html">
-									{' '}
-									Seeking..
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		);
-	}
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item">
+                <a className="nav-link" href="seek_profiles.html">
+                  {' '}
+                  Seeking..
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    )
+  }
 }
 
-export default Navbar;
+export default Navbar
