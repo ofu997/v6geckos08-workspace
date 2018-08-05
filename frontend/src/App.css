@@ -84,3 +84,7 @@ img {
 	color: #bbb !important;
 }
 */
+
+.CardCSS p, h5{
+	color: black; 
+}
